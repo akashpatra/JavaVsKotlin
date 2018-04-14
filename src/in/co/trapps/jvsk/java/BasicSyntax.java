@@ -17,7 +17,7 @@ public class BasicSyntax {
         print();
 
         // variable initialization example
-        initVariable();
+        variableExamples();
     }
 
     /**
@@ -29,12 +29,28 @@ public class BasicSyntax {
     }
 
     /**
-     * Variables Initialization Example
+     * Variable Examples
      */
-    private static void initVariable() {
-        char a = 'A'; // char assignment
-        int b = a; // int assignment
-        String c = "Java"; // string assignment
-        System.out.println("a: " + a + ", b: " + b + ", c: " + c);
+    private static void variableExamples() {
+        System.out.println("\n**** Variable Examples ****\n");
+        VariableExample variableEx = new VariableExample();
+
+        // read only variable initialization example
+        variableEx.initReadOnlyVariable();
+
+        // Print Line to Create Space
+        System.out.println();
+
+        // mutable variable initialization example
+        variableEx.initMutableVariable();
+
+        // Print Line to Create Space
+        System.out.println();
+
+        // instance variable example
+        variableEx.accessInstanceVariable();
     }
 }
+
+
+

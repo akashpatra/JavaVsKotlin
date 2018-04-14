@@ -9,12 +9,12 @@ fun main(args: Array<String>) {
     // print example
     print()
 
-    // variable initialization example
-    initVariable()
+    // Variable Examples
+    variableExamples()
 }
 
 /**
- * Print Example
+ * Print
  */
 fun print() {
     print("Welcome ")
@@ -22,11 +22,24 @@ fun print() {
 }
 
 /**
- * Variables Initialization Example
+ * Variable Examples
  */
-fun initVariable() {
-    val a = 'A' // `Char` type is inferred
-    val b: Int = a.toInt() // Char to Int immediate assignment
-    val c: String = "Kotlin" // immediate assignment
-    println("a: $a, b: $b, c: $c")
+fun variableExamples() {
+    println("\n**** Variable Examples ****\n")
+    var variableEx = VariableExample()
+
+    // read only variable initialization example
+    variableEx.initReadOnlyVariable()
+
+    // Print Line to Create Space
+    println()
+
+    // mutable variable initialization example
+    variableEx.initMutableVariable()
+
+    // Print Line to Create Space
+    println()
+
+    // instance variable example
+    variableEx.accessInstanceVariable()
 }
