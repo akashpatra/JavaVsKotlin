@@ -6,17 +6,32 @@ package `in`.co.trapps.jvsk.kotlin
  * @author Akash Patra
  */
 fun main(args: Array<String>) {
-    // print example
-    print()
+    // print examples
+    printExamples()
 
-    // Variable Examples
+    // Variable examples
     variableExamples()
+
+    // null examples
+    nullExamples()
+
+    // string template examples
+    stringTemplateExamples()
+
+    // casting examples
+    castingExamples()
+
+    // when examples
+    whenExamples()
+
+    // class examples
+    classExamples()
 }
 
 /**
- * Print
+ * Print Examples
  */
-fun print() {
+fun printExamples() {
     print("Welcome ")
     println("to Kotlin World !!!")
 }
@@ -42,4 +57,63 @@ fun variableExamples() {
 
     // instance variable example
     variableEx.accessInstanceVariable()
+}
+
+/**
+ * Null Examples
+ */
+fun nullExamples() {
+    println("\n**** Null Examples ****\n")
+    val nullEx = NullExample()
+
+    // init nulls to a val or var
+    nullEx.initNulls()
+
+    // Print Line to Create Space
+    println()
+
+    try {
+        // access properties of null val or var
+        nullEx.accessNulls()
+    } catch (e: Exception) {
+        println("Exception: $e")
+    }
+}
+
+/**
+ * String Template Examples
+ */
+fun stringTemplateExamples() {
+    println("\n**** String Template Examples ****\n")
+    var strEx = StringTemplateExample()
+    strEx.showTemplate()
+}
+
+/**
+ * Casting Examples
+ */
+fun castingExamples() {
+    println("\n**** Casting Examples ****\n")
+    var castingEx = CastingExample()
+    castingEx.stringCast("Kotlin")
+}
+
+/**
+ * When Examples
+ */
+fun whenExamples() {
+    println("\n**** When Examples ****\n")
+    var whenEx = WhenExample()
+    println(whenEx.checkIntStr(8))
+}
+
+/**
+ * Class Examples
+ */
+fun classExamples() {
+    println("\n**** Class Examples ****\n")
+    val classEx = ClassExample("Java")
+    println(classEx.name)
+    classEx.name = "Java 2"
+    println(classEx.name)
 }
