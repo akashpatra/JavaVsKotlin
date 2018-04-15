@@ -14,6 +14,7 @@ public class VariableExample {
         final char a = 'A'; // Char type
         final int b = a; // Char to Int
         final String c = "Java"; // String
+
         System.out.println("Read Only Variable -> a: " + a + ", b: " + b + ", c: " + c);
     }
 
