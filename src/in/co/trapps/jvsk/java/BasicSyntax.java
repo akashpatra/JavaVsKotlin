@@ -33,6 +33,9 @@ public class BasicSyntax {
 
         // class examples
         classExamples();
+
+        System.out.println("TestingCompareTO: " + (int) 'a' + ", " + (int) 'A');
+        System.out.println("TestingCompareTO: " + "a".compareTo("A"));
     }
 
     /**
