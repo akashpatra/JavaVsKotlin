@@ -21,3 +21,4 @@ class StringTemplateExample {
         println(t2)
     }
 }
+
